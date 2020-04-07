@@ -1,0 +1,1 @@
+Have a white border around parent app, inspect element and use selector to find what / where this div is.   [x]
