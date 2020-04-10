@@ -1,1 +1,9 @@
-Have a white border around parent app, inspect element and use selector to find what / where this div is.   [x]
+- Fix white border around parent div.   [x]
+- Move header to individual component   [x]
+- Work out header tabs                  [ ]
+- Where do I put my CV?                 [ ]
+- Header scrolls to div                 [ ]
+    https://stackoverflow.com/questions/43441856/reactjs-how-to-scroll-to-an-element
+- Increasing shades of grey backgrounds [ ]
+
+https://reactjs.org/docs/components-and-props.html

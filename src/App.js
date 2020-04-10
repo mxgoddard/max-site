@@ -1,18 +1,15 @@
 import React from 'react';
+import NavBar from './components/NavBar.jsx';
+import Personal from './components/Personal.jsx';
+import About from './components/About.jsx';
 import './app.css';
 
 function App() {
     return (
         <div className="App">
-            <div className="App-header">
-                <div class="topnav">
-                    <a href="#temp1">Blank1</a>
-                    <a href="#temp2">Blank2</a>
-                    <a href="#temp3">Blank3</a>
-                    <a href="#temp4">Blank4</a>
-                    <a href="#temp5">Blank5</a>
-                </div>
-            </div>
+            <NavBar />
+            <Personal />
+            <About />
         </div>
     );
 }
