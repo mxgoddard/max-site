@@ -1,9 +1,10 @@
-- Fix white border around parent div.   [x]
-- Move header to individual component   [x]
-- Work out header tabs                  [ ]
-- Where do I put my CV?                 [ ]
-- Header scrolls to div                 [ ]
+- Fix white border around parent div.           [x]
+- Move header to individual component           [x]
+- Work out header tabs                          [x]
+- Where do I put my CV?                         [ ]
+- Header scrolls to div                         [ ]
     https://stackoverflow.com/questions/43441856/reactjs-how-to-scroll-to-an-element
-- Increasing shades of grey backgrounds [ ]
+- Increasing shades of grey backgrounds         [x]
+- Clicking link flashes div if on current page  [ ]
 
 https://reactjs.org/docs/components-and-props.html
