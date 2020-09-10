@@ -1,6 +1,6 @@
 # Max Goddard Website
 
-Just trying to get this hosted ...
+[https://mxgoddard.github.io/max-site/](https://mxgoddard.github.io/max-site/)
 
 ``` bash
 # Make sure dependencies are installed
