@@ -1,9 +1,9 @@
 import React from 'react';
-import './About.css';
+import '../app.css';
 
 function About() {
     return (
-        <div className="AboutDiv">
+        <div className="format-styling">
             <h3>Get this hosted</h3>
             <p>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
