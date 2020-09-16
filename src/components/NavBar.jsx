@@ -13,7 +13,7 @@ class NavBar extends Component {
             <div className="topnav">
                 <a href="#home">Home</a>
                 <a href="#home2">Home2</a>
-                <a href="#home3">Home3</a>
+                {/* <a href="#home3">Home3</a> */}
                 {/* <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#resume">Résumé</a>
