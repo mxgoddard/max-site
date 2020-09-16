@@ -1,2 +1,0 @@
-[x] Core site structure
-[ ] Get hosted on github.io

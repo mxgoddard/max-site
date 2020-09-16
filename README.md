@@ -15,3 +15,10 @@ WORKING_DIRECTORY/max-site>$ npm install
 # Deploying to GitHub pages
 WORKING_DIRECTORY/max-site>$ npm run deploy
 ```
+
+## TODO
+
+[x] Core site structure
+[x] Get hosted on github.io
+[ ] Add Google Analytics (or gtag)
+[ ] Render .MD on site
