@@ -1,10 +1,9 @@
 import React from 'react';
-import './Personal.css';
+import '../app.css';
 
 function Personal() {
     return (
-        <div className="PersonalDiv">
-            <img className="PersonalPhoto" src="/images/portrait-image.jpg" alt="" />
+        <div className="format-styling">
             <center>
                 <h1>Max Goddard</h1>
                 <h3>Software Engineer in Manchester</h3>

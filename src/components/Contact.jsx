@@ -1,10 +1,11 @@
 import React from 'react';
-import './Contact.css';
+import '../app.css';
 
 function Contact() {
     return (
-        <div className="ContactDiv">
+        <div className="format-styling">
             <h3>Contact</h3>
+            <p>Hello, World!</p>
         </div>
     )
 }
