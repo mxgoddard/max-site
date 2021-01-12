@@ -11,10 +11,10 @@ class SideNav extends React.Component {
                     </div>
                 </a>
                 <div class="SideNavMain">
-                    <a href="#home1">Home1</a>
-                    <a href="#home2">Home2</a>
-                    <a href="#home3">Home3</a>
-                    <a href="#home4">Home4</a>
+                    <a href="#home1">About Me</a>
+                    <a href="#home2">Projects</a>
+                    <a href="#home3">Work</a>
+                    <a href="#home4">Contact</a>
                 </div>
             </div>
         )
