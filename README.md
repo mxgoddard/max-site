@@ -13,7 +13,7 @@ WORKING_DIRECTORY/max-site>$ npm install
 
 - [x] Core site structure
 - [ ] Add Google Analytics (or gtag)
-- [ ] Add sidebar
+- [x] Add sidebar
 - [ ] Link codestats (favourite packages / tools? - https://codestats.net/)
-- [ ] Add SCSS to project
 - [ ] Show route of current page (e.g. https://a11y-101.com/development/headlines)
+- [ ] Format-styling css class into parent 

@@ -3,8 +3,8 @@ import '../app.css';
 
 function Contact() {
     return (
-        <div className="format-styling">
-            <h3>Contact</h3>
+        <div className='format-styling'>
+            <h2>Contact</h2>
             <p>Hello, World!</p>
         </div>
     )

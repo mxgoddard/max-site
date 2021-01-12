@@ -1,30 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/SideNav.css';
 
 class SideNav extends React.Component {
     render() {
         return (
-            <div class="SideNav">
-                <a href="#home1">
-                    <div class="SideNavHeader">
+            <div className='SideNav'>
+                <div className='SideNavHeader'>
+                    <Link to='/'>
                         <p>Max Goddard</p>
-                    </div>
-                </a>
-                <div class="SideNavMain">
-                    <a href="#home1">About Me</a>
-                    <a href="#home2">Projects</a>
-                    <a href="#home3">Work</a>
-                    <a href="#home4">Contact</a>
+                    </Link>
                 </div>
+                <nav>
+                    <div className='SideNavMain'>
+                        <Link to='/'>Home</Link>
+                        <Link to='/about'>About Me</Link>
+                        <Link to='/projects'>Projects</Link>
+                        <Link to='/work'>Work</Link>
+                        <Link to='/contact'>Contact</Link>
+                    </div>
+                </nav>
             </div>
         )
     }
 }
-
-// function SideNav() {
-//     return (
-
-//     )
-// }
 
 export default SideNav;

@@ -1,9 +1,9 @@
 import React from 'react';
 import '../app.css';
 
-function Personal() {
+function Header() {
     return (
-        <div className="format-styling">
+        <div className='format-styling'>
             <center>
                 <h1>Max Goddard</h1>
                 <h3>Software Engineer in Manchester</h3>
@@ -12,4 +12,4 @@ function Personal() {
     )
 }
 
-export default Personal;
+export default Header;
