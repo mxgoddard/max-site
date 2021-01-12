@@ -8,7 +8,6 @@ function Personal() {
                 <h1>Max Goddard</h1>
                 <h3>Software Engineer in Manchester</h3>
             </center>
-
         </div>
     )
 }

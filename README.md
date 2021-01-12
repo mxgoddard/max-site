@@ -9,16 +9,11 @@
 WORKING_DIRECTORY/max-site>$ npm install
 ```
 
-## Deployment
-
-``` bash
-# Deploying to GitHub pages
-WORKING_DIRECTORY/max-site>$ npm run deploy
-```
-
 ## TODO
 
 - [x] Core site structure
-- [x] Get hosted on github.io
 - [ ] Add Google Analytics (or gtag)
-- [ ] Render .MD on site
+- [ ] Add sidebar
+- [ ] Link codestats (favourite packages / tools? - https://codestats.net/)
+- [ ] Add SCSS to project
+- [ ] Show route of current page (e.g. https://a11y-101.com/development/headlines)
