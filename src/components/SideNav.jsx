@@ -16,7 +16,7 @@ class SideNav extends React.Component {
                         <Link to='/'>Home</Link>
                         <Link to='/about'>About Me</Link>
                         <Link to='/projects'>Projects</Link>
-                        <Link to='/work'>Work</Link>
+                        <Link to='/experience'>Experience</Link>
                         <Link to='/contact'>Contact</Link>
                     </div>
                 </nav>

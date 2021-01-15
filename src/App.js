@@ -5,7 +5,7 @@ import Contact from './components/Contact.jsx';
 import Home from './components/Home.jsx';
 import Header from './components/Header.jsx';
 import Projects from './components/Projects.jsx';
-import Work from './components/Work.jsx';
+import Experience from './components/Experience.jsx';
 import SideNav from './components/SideNav.jsx';
 import './app.css';
 
@@ -15,7 +15,7 @@ function App() {
             <div className='App'>
                 <SideNav />
                 <Switch>
-                    <div class='Main'>
+                    <div className='Main'>
                         <Route path='/'>
                             <Header />
                         </Route>
@@ -28,8 +28,8 @@ function App() {
                         <Route path="/projects">
                             <Projects />
                         </Route>
-                        <Route path="/work">
-                            <Work />
+                        <Route path="/experience">
+                            <Experience />
                         </Route>
                         <Route path="/contact">
                             <Contact />
