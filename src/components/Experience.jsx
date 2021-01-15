@@ -1,10 +1,9 @@
 import React from 'react';
 const experienceJson = require('../data/experience.json');
 
-class Experience extends React.Component {
+export default class Experience extends React.Component {
 
     state = {
-        test: [ 1, 2, 3, 4, 5 ],
         experience: []
     }
 
@@ -31,14 +30,20 @@ class Experience extends React.Component {
     };
 
     componentDidMount() {
-        let a = experienceJson.experience;
-        console.log(a);
-        // Read experience.json - error handle
-        // TODO - order chronologically
-        this.setState({ experience: a })
+        if (experienceJson.experience !== undefined) {
+            this.setState({ experience: this.SortExperience(experienceJson.experience) })
+        }
+    }
+
+    SortExperience(experience) {
+        return experience.sort(function(a, b) {
+            let d = a.startDate.split('/'); 
+            let aMonth = d[0], aYear = d[1];
+
+            let e = b.startDate.split('/'); 
+            let bMonth = e[0], bYear = e[1];
+            
+            return new Date(bYear, bMonth, 1) - new Date(aYear, aMonth, 1);
+        });
     }
 }
-
-
-
-export default Experience;

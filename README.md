@@ -11,9 +11,9 @@ WORKING_DIRECTORY/max-site>$ npm install
 
 ## TODO
 
+- [ ] Global exception handler 
 - [ ] Setup logging
 - [ ] Design a 'timeline' for experience
-- [ ] Move experience.json into eventual back-end
 - [ ] Redis? 
 - [x] Load work section from json object?
 - [x] Fill in work section
@@ -24,6 +24,7 @@ WORKING_DIRECTORY/max-site>$ npm install
 - [ ] Link codestats (favourite packages / tools? - https://codestats.net/)
 - [x] Add sidebar
 - [ ] Add Google Analytics (or gtag)
+- [ ] Create C# back-end 
 - [x] Core site structure
 
 ## Notes
@@ -31,5 +32,6 @@ WORKING_DIRECTORY/max-site>$ npm install
 - Focus on content first, can always redesign later
 - Design inspiration (https://i.ytimg.com/vi/la11Z4FvPk0/maxresdefault.jpg)
 - Make more recent TODOs at the top, and older ones at the bottom
+- Export default in class declaration (e.g. Experience.jsx)
 
 experience object: place, start date, end date (calculate time from this), position, order by datetime
