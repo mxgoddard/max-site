@@ -11,6 +11,7 @@ WORKING_DIRECTORY/max-site>$ npm install
 
 ## TODO
 
+- [ ] Skills 
 - [ ] Global exception handler 
 - [ ] Setup logging
 - [ ] Design a 'timeline' for experience

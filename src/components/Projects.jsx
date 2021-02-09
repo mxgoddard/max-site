@@ -1,11 +1,20 @@
 import React from 'react';
 
-function Projects() {
-    return (
-        <div className='format-styling'>
-            <h2>Projects</h2>
-        </div>
-    )
-}
+export default class Projects extends React.Component {
 
-export default Projects;
+    state = {
+        projects: []
+    };
+
+    render() {
+        return (
+            <div className='format-styling'>
+                <h2>Projects</h2>
+            </div>
+        )
+    }
+
+    componentDidMount() {
+        
+    }
+}
