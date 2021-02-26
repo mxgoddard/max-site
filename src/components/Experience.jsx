@@ -1,4 +1,5 @@
 import React from 'react';
+import { CalculateTimePeriod } from '../helpers/helper.js';
 const experienceJson = require('../data/experience.json');
 
 export default class Experience extends React.Component {
@@ -9,24 +10,36 @@ export default class Experience extends React.Component {
 
     render() {
         return (
-            <div className='format-styling'>
-                {
-                    this.state.experience.map((obj, index) => {
-                        return (
-                            <div key={index}> 
-                                <span>{ obj.company } | </span>
-                                <span>{ obj.position } | </span>
-                                <span>{ obj.startDate } | </span>
-                                <span>{ obj.endDate } | </span>
-                                <span>{ this.CalculatePeriod(obj.startDate, obj.endDate) }</span>
-                                { obj.notes.length > 0 &&
-                                    <span> | { obj.notes }</span>
-                                }
-                            </div>
-                        );
-                    })
-                }
-            </div>
+            <>
+                <div className='format-styling'>
+                    <h1>Experience</h1>
+                </div>
+                <div className='format-styling padding-bottom-10'>
+                    <h2>Work</h2>
+                    {
+                        this.state.experience.map((obj, index) => {
+                            return (
+                                <div key={index} className='padding-bottom-10'> 
+                                    <span>{ obj.company } | </span>
+                                    <span>{ obj.position } | </span>
+                                    <span>{ obj.startDate } | </span>
+                                    <span>{ obj.endDate } | </span>
+                                    <span>{ CalculateTimePeriod(obj.startDate, obj.endDate) }</span>
+                                    { obj.notes.length > 0 &&
+                                        <span> | { obj.notes }</span>
+                                    }
+                                </div>
+                            );
+                        })
+                    }
+                </div>
+                <div className='format-styling'>
+                    <h2>Skills</h2>
+                    <h3>Back-end</h3>
+                    <h3>Front-end</h3>
+                    <h3>General / Miscellaneous</h3>
+                </div>
+            </>
         )
     };
 
@@ -35,35 +48,6 @@ export default class Experience extends React.Component {
         if (experienceJson.experience !== undefined) {
             this.setState({ experience: this.SortExperience(experienceJson.experience) })
         }
-    }
-
-    CalculatePeriod(startDate, endDate) 
-    {
-        let splitDate = startDate.split('/'); 
-        let startMonth = splitDate[0], startYear = splitDate[1];
-
-        let date1 = new Date(startYear, startMonth, '01');
-
-        splitDate = endDate.split('/'); 
-        let endmonth = splitDate[0], endYear = splitDate[1];
-
-        let date2 = new Date(endYear, endmonth, '01');
-        let difference = date2.getTime() - date1.getTime();
-
-        console.log('difference' + difference);
-        
-        let day = 1000 * 60 * 60 * 24;
-
-        let days = Math.floor(difference/day);
-        let months = Math.floor(days/31);
-        let years = Math.floor(months/12);
-
-        console.log('Years' + years);
-        console.log('Months' + months);
-        console.log('Days' + days);
-
-        let value = `${years} Years, ${months} Months, ${days} Days`;
-        return value;
     }
 
     SortExperience(experience) 

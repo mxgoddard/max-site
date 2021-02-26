@@ -11,8 +11,12 @@ WORKING_DIRECTORY/max-site>$ npm install
 
 ## TODO
 
-- [ ] Move time difference method into a helper class (https://stackoverflow.com/questions/41949768/how-to-create-common-helper-class-in-react-js-using-es6-which-is-used-by-another/52924068)
-- [ ] Calculate years, months, days for experience
+- [ ] Experience page total time worked 
+- [ ] Home page have a timer of how long I've been working for (hours, minutes seconds)
+- [ ] About me (interests) 
+- [ ] Highlight which part of the website you are currently on 
+- [x] Move time difference method into a helper class
+- [x] Calculate years, months for experience
 - [ ] Skills 
 - [ ] Global exception handler 
 - [ ] Setup logging
@@ -38,3 +42,17 @@ WORKING_DIRECTORY/max-site>$ npm install
 - Export default in class declaration (e.g. Experience.jsx)
 
 experience object: place, start date, end date (calculate time from this), position, order by datetime
+
+Your intended job title.
+Where you live.
+Years of experience.
+A short (short!) bio that clearly describes what kind of work you’re looking for (or say you’re not looking for work at this time).
+4–6 bullet points of your most impressive professional accomplishments. Include specific metrics on the impact (money saved, speed improvements, etc) where possible.
+Some of your personal interests; ideally, this is a mix of both ongoing professional development and hobbies / passions.
+2–4 personal accomplishments outside of work.
+Contact info / form.
+
+## Inspiration
+
+- https://brittanychiang.com/
+
