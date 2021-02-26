@@ -1,14 +1,18 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     margin: 0px;
     color: #333;
     line-height: 1.5;
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 .format-styling {
     padding-left: 10%;
     padding-right: 10%;
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto', sans-serif; */
     border-bottom-color: black;
     border-bottom-style: inset;
     border-bottom-width: 1px;

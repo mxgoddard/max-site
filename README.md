@@ -11,6 +11,8 @@ WORKING_DIRECTORY/max-site>$ npm install
 
 ## TODO
 
+- [ ] Move time difference method into a helper class (https://stackoverflow.com/questions/41949768/how-to-create-common-helper-class-in-react-js-using-es6-which-is-used-by-another/52924068)
+- [ ] Calculate years, months, days for experience
 - [ ] Skills 
 - [ ] Global exception handler 
 - [ ] Setup logging
