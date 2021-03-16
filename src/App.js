@@ -7,7 +7,7 @@ import Header from './components/Header.jsx';
 import Projects from './components/Projects.jsx';
 import Experience from './components/Experience.jsx';
 import SideNav from './components/SideNav.jsx';
-import './app.css';
+import './app.scss';
 
 function App() {
     return (
