@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import About from './components/About.jsx';
-import Contact from './components/Contact.jsx';
-import Home from './components/Home.jsx';
-import Header from './components/Header.jsx';
-import Projects from './components/Projects.jsx';
-import Experience from './components/Experience.jsx';
-import SideNav from './components/SideNav.jsx';
+import About from './components/About';
+import Contact from './components/Contact';
+import Home from './components/Home';
+import Header from './components/Header';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import SideNav from './components/SideNav';
 import './styles/App.scss';
 
 function App() {

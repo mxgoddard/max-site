@@ -50,7 +50,7 @@ export default class Experience extends React.Component {
         }
     }
 
-    SortExperience(experience) 
+    SortExperience(experience)
     {
         return experience.sort(function(a, b) {
             let d = a.startDate.split('/'); 
