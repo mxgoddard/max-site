@@ -46,7 +46,7 @@ WORKING_DIRECTORY/max-site>$ npm install
 - Focus on content first, can always redesign later
 - Design inspiration (https://i.ytimg.com/vi/la11Z4FvPk0/maxresdefault.jpg)
 - Make more recent TODOs at the top, and older ones at the bottom
-- Export default in class declaration (e.g. Experience.jsx)
+- Export default in class declaration (e.g. Experience.tsx)
 
 experience object: place, start date, end date (calculate time from this), position, order by datetime
 

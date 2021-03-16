@@ -1,22 +1,23 @@
-/// helper.js
+/// helper.ts
 
-export const CalculateAge = (birthDate) => 
+export const CalculateAge = (birthDate:Date) => 
 {
     var differenceMs = Date.now() - birthDate.getTime();
     var differenceDate = new Date(differenceMs);
     return Math.abs(differenceDate.getUTCFullYear() - 1970);
 }
 
-export const CalculateTimePeriod = (startDateData, endDateData) => 
+// TODO - Fix this to conform to best practises in terms of declaring types
+export const CalculateTimePeriod = (startDateData:string, endDateData:string) => 
 {
         // Get month and year
         let startDateSplit = startDateData.split('/');
-        let startMonth = startDateSplit[0];
-        let startYear = startDateSplit[1];
+        let startMonth :any= startDateSplit[0];
+        let startYear:any = startDateSplit[1];
 
         let endDateSplit = endDateData.split('/');
-        let endMonth = endDateSplit[0];
-        let endYear = endDateSplit[1];
+        let endMonth:any = endDateSplit[0];
+        let endYear:any = endDateSplit[1];
 
         if (endDateData === 'Current') {
             let date = new Date();
@@ -25,8 +26,8 @@ export const CalculateTimePeriod = (startDateData, endDateData) =>
         }
 
         // Get the day difference
-        let startDate = new Date(startYear, startMonth, '01');
-        let endDate = new Date(endYear, endMonth, '30');
+        let startDate = new Date(startYear, startMonth, 1);
+        let endDate = new Date(endYear, endMonth, 30);
 
         let difference = endDate.getTime() - startDate.getTime();
 
@@ -36,7 +37,7 @@ export const CalculateTimePeriod = (startDateData, endDateData) =>
         return FormatTimePeriodString(days);
 };
 
-export const FormatTimePeriodString = (days) => 
+export const FormatTimePeriodString = (days:number) => 
 {
     let years = 0;
     let months = 0;
@@ -66,7 +67,7 @@ export const FormatTimePeriodString = (days) =>
     if (months === 0) monthText = '';
 
     // Add comma in between text if years and months are both displayed
-    let addComma = years.length + months.length === 0 ? ', ' : '';
+    let addComma = years.toString().length + months.toString().length === 0 ? ', ' : '';
 
     return `${yearText}${addComma}${monthText}`;
 };
