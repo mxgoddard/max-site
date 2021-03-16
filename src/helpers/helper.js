@@ -1,5 +1,12 @@
 /// helper.js
 
+export const CalculateAge = (birthDate) => 
+{
+    var differenceMs = Date.now() - birthDate.getTime();
+    var differenceDate = new Date(differenceMs);
+    return Math.abs(differenceDate.getUTCFullYear() - 1970);
+}
+
 export const CalculateTimePeriod = (startDateData, endDateData) => 
 {
         // Get month and year

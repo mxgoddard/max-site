@@ -11,6 +11,12 @@ WORKING_DIRECTORY/max-site>$ npm install
 
 ## TODO
 
+- [ ] Create a scss variables file 
+- [ ] Add a roadmap / learning map project (look at https://roadmap.sh/)
+- [ ] Include my MyTechCheatsheet as a project
+- [ ] Split helpers into more specific functionalities 
+- [ ] Add Redux
+- [ ] Upgrade to TS
 - [ ] Experience page total time worked 
 - [ ] Home page have a timer of how long I've been working for (hours, minutes seconds)
 - [ ] About me (interests) 
@@ -36,6 +42,7 @@ WORKING_DIRECTORY/max-site>$ npm install
 
 ## Notes
 
+- Add Redux to hold global variables (e.g. birthdate for about page to calculate age)
 - Focus on content first, can always redesign later
 - Design inspiration (https://i.ytimg.com/vi/la11Z4FvPk0/maxresdefault.jpg)
 - Make more recent TODOs at the top, and older ones at the bottom

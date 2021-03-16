@@ -1,5 +1,9 @@
+/// Global stylesheet
+@import "./variables/colours";
+
 html, body {
     font-family: 'Roboto', sans-serif;
+    background-color: $global-background-colour
 }
 
 body {
@@ -12,7 +16,6 @@ body {
 .format-styling {
     padding-left: 10%;
     padding-right: 10%;
-    border-bottom-color: black;
     border-bottom-style: inset;
     border-bottom-width: 1px;
     border-bottom-color: #F1EDEC;
