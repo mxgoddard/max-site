@@ -21,7 +21,7 @@ export default class Home extends React.Component
     }
 
     componentDidMount() {
-        let text = "Hi, I'm Max. I build [d]experiences[r]stuff.";
+        let text = "Hi, I'm Max and I build [d]experiences.[r] stuff.";
         this.setState({ typewriterText: text })
     }
 }

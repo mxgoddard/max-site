@@ -15,7 +15,7 @@ interface IState {
 export default class Typewriter extends React.Component<IProps>
 {
     private _interval : any;
-    private _typeDelay : number = 100;
+    private _typeDelay : number = 90;
     private _delete : boolean = false;
     private _b : boolean = false;
 
@@ -82,22 +82,16 @@ export default class Typewriter extends React.Component<IProps>
         }
 
         if (newChar === ']') {
-            // Read the whole operator in one go, and increase the count by 2 (or 3?)
             let operator = `[${text[count-1]}]`
 
-            if(operator === '[d]') {
-
-                if (this._b) {
+            if(operator === '[d]') 
+            {
+                if (!this._b) {
                     console.log('---------------------------------------------');
                     this._delete = false;
                     // count needs to increase to where [r] is
-                    count = text.indexOf('[r]') + 1;
+                    count = text.indexOf('[r]') + 2;
                     skip = true;
-                }
-
-                if (!this._b) {
-                    console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
-                    this._b = true;
                 }
             }
         }
