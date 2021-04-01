@@ -1,0 +1,58 @@
+$_nav-bar-margin: 10vw;
+$_lilac: rgb(143, 143, 255);
+$_light_grey: rgb(71, 71, 71);
+
+.NavBarContainer {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 0 2px 14px -2px rgb(190, 190, 190);
+    font-family: 'Roboto', sans-serif;
+
+    .NavBarLeft {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: $_nav-bar-margin;
+
+        span {
+            font-size: 28px;
+            font-weight: 500;
+
+            &:first-child {
+                color: $_light_grey;
+            }
+
+            &:last-child {
+                color: $_lilac
+            }
+        }
+    }
+
+    .NavBarRight {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: $_nav-bar-margin;
+
+        a {
+            color: $_light_grey;
+            margin-left: 3vw;
+            font-weight: bold;
+            font-size: 16px;
+
+            span {
+                background-color: rgb(176, 176, 255);
+                color: white;
+                padding: 8px 18px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

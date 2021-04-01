@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Header from './components/Header';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
-import SideNav from './components/SideNav';
+import SideNav from './components/NavBar';
 import './styles/App.scss';
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
                 <SideNav />
                 <Switch>
                     <div className='Main'>
-                        <Route path='/'>
+                        {/* <Route path='/'>
                             <Header />
-                        </Route>
+                        </Route> */}
                         <Route exact path="/">
                             <Home />
                         </Route>

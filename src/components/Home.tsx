@@ -1,21 +1,27 @@
 import React from 'react';
+import { Typewriter } from './Typewriter';
 import '../styles/Home.scss';
 
-class Home extends React.Component {
+interface IState {
+    typewriterText: string
+}
+
+export default class Home extends React.Component 
+{
+    state: IState = {
+        typewriterText: ""
+    }
+
     render() {
         return (
-            /* Blog / update feed */
             <div className="HomeContainer">
-                <div className='format-styling padding-right-50-percent'> 
-                    <p>Hi, I'm Max and I'm a full-stack software developer living in Manchester, England.</p>
-                </div>
+                <Typewriter text={this.state.typewriterText} />
             </div>
         )
     }
 
     componentDidMount() {
-        console.log('Hello, World!');
+        let text = "[s]Hi, I'm Max I build [d]experiences[r]stuff.";
+        this.setState({ typewriterText: text })
     }
 }
-
-export default Home;

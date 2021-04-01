@@ -11,6 +11,7 @@ WORKING_DIRECTORY/max-site>$ npm install
 
 ## TODO
 
+- [ ] Typewriter effect (with quick mistake) for 'Hi, I'm Max, I build stuff.'
 - [ ] Create a scss variables file 
 - [ ] Add a roadmap / learning map project (look at https://roadmap.sh/)
 - [ ] Include my MyTechCheatsheet as a project
