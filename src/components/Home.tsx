@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typewriter } from './Typewriter';
+import Typewriter from './Typewriter';
 import '../styles/Home.scss';
 
 interface IState {
@@ -8,8 +8,8 @@ interface IState {
 
 export default class Home extends React.Component 
 {
-    state: IState = {
-        typewriterText: ""
+    state : IState = {
+        typewriterText: ''
     }
 
     render() {
@@ -21,7 +21,7 @@ export default class Home extends React.Component
     }
 
     componentDidMount() {
-        let text = "[s]Hi, I'm Max I build [d]experiences[r]stuff.";
+        let text = "Hi, I'm Max. I build [d]experiences[r]stuff.";
         this.setState({ typewriterText: text })
     }
 }

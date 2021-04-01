@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { CalculateAge } from '../helpers/helper';
 import '../styles/App.scss';
 
-class About extends React.Component {
+export default class About extends React.Component {
     render() {
         return (
             <div className='format-styling'>
@@ -24,8 +24,6 @@ class About extends React.Component {
         )
     }
 }
-
-export default About;
 
 /*
     TODO
