@@ -8,25 +8,23 @@ interface IState {
     currentText: string,
     count: number,
     buffer: string,
-    delete: boolean,
     realLength: number,
+    stack: string[]
 }
 
 export default class Typewriter extends React.Component<IProps>
 {
     private _interval : any;
-    private _typeDelay : number = 200;
+    private _typeDelay : number = 100;
+    private _delete : boolean = false;
+    private _b : boolean = false;
 
     state : IState = {
         currentText: '',
         count: 0,
         buffer: '',
-        delete: false,
-        realLength: -1
-    }
-
-    constructor(props:IProps) {
-        super (props);
+        realLength: -1,
+        stack: []
     }
 
     render(): React.ReactNode {
@@ -48,7 +46,7 @@ export default class Typewriter extends React.Component<IProps>
         let { text } = this.props;
 
         let length = realLength;
-        if (length == -1) {
+        if (length === -1) {
             length = this.getRealLength(text, realLength);
         }
         
@@ -62,32 +60,77 @@ export default class Typewriter extends React.Component<IProps>
     }
 
     updateText() {
-        let { count, currentText, buffer } = this.state;
+        let { count, stack } = this.state;
         let { text } = this.props;
 
+        let skip = false;
         let newChar = text[count];
+        console.log(newChar);
+
+        if (newChar === '[') {
+            // Read the whole operator in one go, and increase the count by 2 (or 3?)
+            let operator = `[${text[count+1]}]`
+
+            if (operator === '[d]') {
+                count += 2;
+                skip = true;
+            }
+
+            if (operator === '[r]') {
+                this._delete = true;
+            }
+        }
+
+        if (newChar === ']') {
+            // Read the whole operator in one go, and increase the count by 2 (or 3?)
+            let operator = `[${text[count-1]}]`
+
+            if(operator === '[d]') {
+
+                if (this._b) {
+                    console.log('---------------------------------------------');
+                    this._delete = false;
+                    // count needs to increase to where [r] is
+                    count = text.indexOf('[r]') + 1;
+                    skip = true;
+                }
+
+                if (!this._b) {
+                    console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+                    this._b = true;
+                }
+            }
+        }
+
+        if (skip) {
+            this.setState({ count: count+1 });
+
+            return;
+        }
+
+        if (!this._delete) 
+        {
+            stack.push(newChar);
+            count += 1;
+        }
+        else 
+        {
+            stack.pop();
+            count -= 1;
+        }
+
+        // !this._delete ? stack.push(newChar) : stack.pop();
+
+        let a = stack.join('');
+
+        this.setState({ currentText: a, count: count })
+
+
+        return;
 
         // If newChar is '[' - add to buffer
         // If newChar is a normal letter but '[' is present in buffer - add to buffer
         // If newChar is ']' - follow unique process and clear buffer
-
-        if (newChar == '['){
-            // Read the whole operator in one go, and increase the count by 2 (or 3?)
-            let operator = `[${text[count+1]}]`
-
-            switch (operator){
-                case '[d]':
-                    console.log('[d]');
-                    break;
-                case '[r]':
-                    console.log('[r]');
-                    break;
-            }
-        }
-
-        let newText = currentText + newChar;
-        
-        this.setState({ currentText: newText, count: count+1 })
     }
 
     getRealLength(text: string, realLength: number) : number {
