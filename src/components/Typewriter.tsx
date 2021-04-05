@@ -17,8 +17,9 @@ export default class Typewriter extends React.Component<IProps>
     private _typeDelay : number = 90;
     private _delete : boolean = false;
 
+    // currentText: '|' to remove page movement on load - should find a better way to do this
     state : IState = {
-        currentText: '',
+        currentText: '|',
         count: 0,
         realLength: -1,
         stack: []
@@ -26,7 +27,7 @@ export default class Typewriter extends React.Component<IProps>
 
     render(): React.ReactNode {
         return (
-            <div style={{marginTop: "50px"}}>
+            <div>
                 { this.state.currentText }
             </div>
         )

@@ -11,13 +11,14 @@ WORKING_DIRECTORY/max-site>$ npm install
 
 ## TODO
 
-- [ ] Typewriter effect (with quick mistake) for 'Hi, I'm Max, I build stuff.'
-- [ ] Create a scss variables file 
+- [x] Import Objektiv Mk3
+- [x] Typewriter effect (with quick mistake) for 'Hi, I'm Max, I build stuff.'
+- [x] Create a scss variables file 
 - [ ] Add a roadmap / learning map project (look at https://roadmap.sh/)
 - [ ] Include my MyTechCheatsheet as a project
 - [ ] Split helpers into more specific functionalities 
 - [ ] Add Redux
-- [ ] Upgrade to TS
+- [x] Upgrade to TS
 - [ ] Experience page total time worked 
 - [ ] Home page have a timer of how long I've been working for (hours, minutes seconds)
 - [ ] About me (interests) 
@@ -28,12 +29,10 @@ WORKING_DIRECTORY/max-site>$ npm install
 - [ ] Global exception handler 
 - [ ] Setup logging
 - [ ] Design a 'timeline' for experience
-- [ ] Redis? 
 - [x] Load work section from json object?
 - [x] Fill in work section
 - [ ] Example project / blog
 - [ ] Code style theme (like stack overflow codeblock examples?)
-- [ ] Format-styling css class into parent 
 - [ ] Show route of current page (e.g. https://a11y-101.com/development/headlines)
 - [ ] Link codestats (favourite packages / tools? - https://codestats.net/)
 - [x] Add sidebar
